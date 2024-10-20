@@ -1,0 +1,618 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  background-color: rgb(3, 6, 23);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Đảm bảo menu luôn nằm trên các phần tử khác */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid white;
+}
+
+/* Thiết lập mặc định cho các mục trong menu */
+.menu li a {
+   /* Màu chữ mặc định */
+  text-decoration: none; /* Bỏ gạch chân */
+  padding: 10px; /* Khoảng cách giữa chữ và viền menu */
+  display: block; /* Đảm bảo toàn bộ mục menu có thể nhận hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng mượt mà */
+}
+
+/* Khi hover vào mục menu */
+.menu li a:hover {
+  background-color: white; /* Màu nền khi hover */
+  color: black; /* Đổi lại màu chữ nếu cần */
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.duancanhan{
+  background-color: rgb(8, 28, 41);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f39c12; /* Màu vàng khi hover */
+}
+
+/* Section styles */
+section {
+  padding-top: 90px ;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  background-color: rgb(8,28,41);
+}
+
+#information {
+  background-color: #ffffff;
+}
+
+#challenges {
+  background-color: rgb(8, 28, 41);
+}
+
+#expectation {
+  background-color: rgb(8, 28, 41);
+}
+.icon {
+  display: flex;
+  align-items: center;
+}
+.hoten,
+.que {
+  font-size: 17px;
+  font-weight: 500;
+}
+.ten,
+.quequan {
+  font-size: 30px;
+  font-weight: 500;
+}
+.banner {
+  background-color: rgb(18, 25, 41);
+}
+h3,
+h4,
+h5,
+h6 {
+  color: #f39c12;
+}
+.Information {
+  background-color: rgb(2, 6, 23);
+}
+
+.aboutMe-item {
+  background: linear-gradient(#141010, #3f3434);
+  box-shadow: 0 0 30px rgba(222, 215, 215, 0.5); 
+  padding: 30px 40px;
+}
+.aboutMe-button {
+  padding: 5px 10px;
+  border-radius: 25px;
+  background: red;
+  font-size: 16px;
+  color: white;
+}
+.aboutMe {
+  background-color: rgb(8, 28, 41);
+}
+.mail {
+  border-radius: 10px;
+  background-color: bisque;
+  padding: 7px 14px;
+  color: red;
+  border: 2px solid red;
+  position: relative;
+  overflow: hidden;
+}
+.mail::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(224, 157, 69);
+  left: -100%;
+  top: 0;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+.mail:hover::before{
+  left: 0;
+}
+.mail:hover span{
+  color: #ffffff;
+}
+
+.anh {
+  flex: 0 0 35%;
+}
+.chu {
+  font-size: 20px;
+  /* line-height: 60px; */
+  margin-bottom: 32px;
+}
+.mail:hover {
+  transform: scale(1.1);
+}
+.btnquay:hover {
+  transform: scale(1.1);
+}
+.btnquay {
+  padding: 7px 10px;
+  color: red;
+}
+
+h4 {
+  font-size: 27px !important;
+}
+.showMenu {
+  display: flex;
+}
+.iconcarousel-item1 {
+  margin-top: 30px;
+}
+
+.slidechu1 {
+  flex: 0 0 100%;
+}
+.chuduoi {
+  line-height: 50px !important;
+}
+.list-images {
+  display: flex;
+  width: 500%;
+  transition: 0.5s;
+}
+.boc1 {
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+ border-radius: 10px;
+ background-color: rgb(38, 32, 32);
+  align-items: center;
+  padding: 30px 20px;
+  box-shadow: 0 0 30px rgba(230, 227, 227, 0.5); 
+}
+
+.slide-show {
+  overflow: hidden;
+}
+.btns,
+.btn1 {
+  cursor: pointer;
+}
+.anh:hover {
+  transform: scale(1.1);
+}
+
+.bentrai {
+  color: black;
+}
+.quaylai {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  position: fixed;
+  bottom: 98px;
+  right: 20px;
+  opacity: 0.5;
+  border-radius: 17px;
+  padding: 7px 7px;
+  color: red;
+  border: 2px solid red;
+}
+.cay {
+  position: relative;
+}
+.hangdoc {
+  background-color: #e78253;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  -webkit-box-shadow: -5px -1px 48px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px -1px 48px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -5px -1px 48px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+  
+}
+.cay1 {
+  position: relative;
+  background:rgb(8, 28, 41);
+}
+.anh9,
+.anh10 {
+  position: relative;
+}
+.object-fit-cover {
+  object-fit: cover;
+}
+.anh9:before,
+.anh10::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(237, 241, 242);
+  bottom: 50%;
+}
+
+.anh9:before {
+  right: -15px;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+.anh10::before {
+  left: -19px;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.duan {
+  background-color: #ecf0f1;
+  box-shadow: 0 0 40px rgba(211, 207, 207, 0.5); 
+}
+h5 {
+  color: rgb(215, 30, 24);
+}
+
+.bentrai {
+  border-radius: 15px;
+}
+.noidung,
+.noidung2,
+.noidung3 {
+  top: 0;
+  position: absolute;
+  right: 50%;
+  background-color: #ffffff;
+  transform: translateX(50%);
+  display: none;
+  border-radius: 15px;
+}
+.close {
+  border-radius: 10px;
+  background-color: bisque;
+  padding: 7px 10px;
+  color: red;
+  border: 2px solid red;
+}
+.logo4 {
+  width: 250px;
+}
+.CHALLENGES {
+  background-color: rgb(8, 28, 41);
+  
+}
+.logo3 {
+  color: aliceblue;
+}
+.list-images1 {
+  justify-content: center;
+}
+.slide-show1 {
+  background-color: rgb(23, 26, 43);
+  transition: 0.5s;
+}
+.slide9 {
+  transition: transform 0.5s ease; /* Thêm hiệu ứng chuyển động */
+  /* Đảm bảo mỗi slide chiếm toàn bộ chiều rộng */
+  transition: 0.5s;
+  align-items: center;
+}
+.skill-1 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  flex: 0 0 25%;
+  transition: 0.5s;
+  box-shadow: 0 0 30px rgba(207, 200, 200, 0.5); 
+  
+}
+.skill {
+   background-color: rgb(8,28,41); 
+}
+.khanang {
+  width: 130px;
+  height: 130px;
+}
+
+/* anh */
+.anh1 {
+  background-color: rgb(8, 28, 41);
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Ẩn các ảnh không nằm trong vùng hiển thị */
+}
+
+.list-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Hiệu ứng mượt mà khi chuyển đổi */
+}
+
+.list-images img {
+  min-width: 100%; /* Đảm bảo mỗi ảnh chiếm toàn bộ chiều rộng của container */
+}
+
+button {
+  z-index: 10; /* Đảm bảo nút điều khiển nằm trên cùng */
+}
+
+ul.menu a {
+  position: relative;
+  padding-bottom: 7px;
+  border-radius: 9px;
+}
+
+ul.menu a::after {
+  content: "";
+  height: 5px;
+  width: 0px;
+  border-radius: 2px;
+  background: rgb(182, 90, 59);
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+ul.menu a:hover::after {
+  width: 50%;
+  transform: translateX(100%);
+}
+.slide {
+  border-radius: 25px;
+  background-color: rgb(28, 30, 46);
+  padding: 30px 40px;
+}
+.lienhe {
+  color: aquamarine;
+}
+.fotter {
+  background-color: black;
+}
+.fotter-duoi {
+  color: #ffffff;
+}
+.lienhe p {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+}
+.duan a{
+  color: black;
+}
+.duan a:hover{
+  color: #f39c12;
+
+}
+.anhtuduy{
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+.kivong{
+  /* background-color:rgb(0, 0, 0); */
+}
+.kivong h3{
+  color: #ffffff;
+}
+.skill-1:hover {
+  background-color:#f39c12;
+  
+}
+/* // skillll */
+.skills{
+  background-color: rgb(8, 28, 41);
+}
+ .bar{
+  width: 100%;
+  height: 10px;
+  background-color: #a7a6a3;
+  border-radius: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+ .bar .html{
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: rgb(34, 101, 194);
+  border-radius: 25px;
+  box-shadow: 5px 10px 15px 0px rgba(0, 0, 0, 0.3);
+
+
+}
+.bar .JavaScript{
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: rgb(34, 101, 194);
+  border-radius: 25px;
+  box-shadow: 5px 10px 15px 0px rgba(0, 0, 0, 0.3);
+
+
+}
+.bar .css{
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: rgb(34, 101, 194);
+  border-radius: 25px;
+  box-shadow: 5px 10px 15px 0px rgba(0, 0, 0, 0.3);
+
+
+}
+ .html{
+  width: 30%;
+  animation: html 6s;
+}
+
+ .JavaScript{
+  width: 20%;
+  animation: JavaScript 6s;
+}
+ .css{
+  width: 20%;
+  animation: css 6s;
+}
+.Professionl{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.noidung9-1{
+border-radius: 10px;
+background-color: #fff;
+box-shadow: 0 0 30px rgba(196, 191, 191, 0.5); 
+
+}
+
+.info p{
+  color: #ffffff;
+}
+ .bar span{
+  color: #141010;
+} 
+@keyframes html{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 30%;
+  }
+}
+
+@keyframes JavaScript{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 20%;
+  }
+}
+@keyframes css{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 20%;
+  }
+}
+@keyframes glow{
+  0%{
+    box-shadow: none;
+    background-color: red;
+
+  }
+  100%{
+    background-color: blueviolet;
+
+  }
+}
+.benphai1 {
+ border-radius: 50%;
+}
+#myChart{
+  background-color: #ffffff;
+  box-shadow: 0 0 30px rgba(184, 179, 179, 0.5); 
+}
+
+.eventNews{
+  background-color: rgb(23, 26, 43);
+}
+
+.quaylai:hover {
+  transform: scale(1.1);
+  z-index: 0;
+}
+
+.Expectation{
+  background-color: rgb(8, 268 41);
+  
+}
+.duan1{
+  border-radius: 10px;
+  background-color: rgb(48, 40, 40);
+  padding: 3px 20px;
+  box-shadow: 0 0 30px rgba(211, 207, 207, 0.5); 
+}
+.anhduan{
+  box-shadow: 0 0 30px rgba(211, 207, 207, 0.5); 
+  
+}
+.anhavta{
+  width: 500px;
+  border-radius: 50%;
+  box-shadow: 0 0 50px rgba(205, 201, 201, 0.5), 0 0 20px rgba(55, 164, 219, 0.5),0 0 50px rgba(219, 116, 116, 0.5);
+  object-fit: cover;
+  aspect-ratio: 1;
+  
+}
+.anhavta1{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.absolute{
+  display: none;
+}
+h1,.CHALLENGES-1-chu{
+  color: rgb(242, 156, 17);
+}
+.logo-1{
+  width: 125px;
+}
+.btn{
+  font-size: 30px;
+}
+.fotter{
+  border-top:1px solid #fff;
+}
+.face:hover ,.faced:hover ,.close:hover {
+  transform: scale(1.1);
+}
+.duan-1{
+  padding-left: 27px;
+}

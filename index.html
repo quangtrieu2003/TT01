@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="vn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./trangchu.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <section>
+      <div class="container">
+        <header class="logo w-full">
+          <nav class="container mx-auto py-4">
+            <div class="logo" id="#home">
+              <a href="#home"
+                ><img class="logo-1" src="./img/Logo I&E đỏ (png).png" alt=""
+              /></a>
+            </div>
+            <ul class="menu flex-col md:flex-row md:flex">
+              <div class="menu-1 flex">
+                <li>
+                  <a href="#home"><p>Trang Chủ</p> </a>
+                </li>
+                <li>
+                  <a href="#Information"><p>Thông Tin</p> </a>
+                </li>
+                <li>
+                  <a href="#Challenges"><p>Thử Thách</p> </a>
+                </li>
+                <li>
+                  <a href="#skills"><p>Kĩ Năng</p> </a>
+                </li>
+                <li>
+                  <a href="#Expectation"><p>Kỳ Vọng</p></a>
+                </li>
+              </div>
+            </ul>
+
+            <button
+              id="toggleButton"
+              class="icon w-4 h-4 md:hidden"
+              onclick="showMenu()"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </nav>
+        </header>
+      </div>
+    </section>
+    <section class="gioithieu pt-44" id="home">
+      <div class="container mx-auto">
+        <div class="bentrong flex gap-36 anhavta1">
+          <div class="flex-1">
+            <div class="noidungbentrong">
+              <h3 class="text-2xl text-white">Xin chào ,em là</h3>
+              <h1 class="text-5xl mt-2">Phạm Quang Triệu</h1>
+              <p class="text-lg text-white mt-5">
+                Em là 1 nhà thiết kế giao diện web và đang là thực tập sinh tại
+                công ty I&E việt Nam
+              </p>
+            </div>
+          </div>
+          <div class="flex-1 anhavta1">
+            <img
+              class="anhavta"
+              src="./img/z5907798370086_64b59c5135b11b04f7bcab37279edcd0.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="anh1 flex justify-center" id="home">
+      <div class="container list-images1 pt-16 overflow-hidden">
+        <div class="hack2" style="transition: 0.5s">
+          <div class="flex hack" style="width: 300%">
+            <div style="aspect-ratio: 16/9" class="w-full h-full">
+              <img
+                src="./img/hack.jpg"
+                alt="Slide 1"
+                class="w-full h-full object-fit-cover"
+              />
+            </div>
+            <div style="aspect-ratio: 16/9" class="w-full h-full">
+              <img
+                src="./img/hack1.jpg"
+                alt="Slide 2"
+                class="w-full h-full object-fit-cover"
+              />
+            </div>
+            <div style="aspect-ratio: 16/9" class="w-full h-full">
+              <img
+                src="./img/hack2.jpg"
+                alt="Slide 1"
+                class="w-full h-full object-fit-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <button
+      id="prev"
+      class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black p-2 rounded-full shadow-lg"
+    ></button>
+    <button
+      id="next"
+      class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black p-2 rounded-full shadow-lg"
+    >
+      >
+    </button>
+
+    <section class="aboutMe" id="Information">
+      <h3 class="mb-12 text-4xl">Thông tin cá nhân</h3>
+      <div class="container mx-auto">
+        <div class="container-2 flex gap-36">
+          <div class="flex-1 aboutMe-item rounded-2xl pt-9 pl-9 pr-7 pb-5">
+            <div class="flex justify-around gap-12 flex-col flex-1">
+              <div class="flex gap-10">
+                <div class="ten text-white text-left">
+                  <div>
+                    <h3 class="mb-3">Phạm Quang Triệu</h3>
+                    <p class="chu">Front-End Developer</p>
+                  </div>
+                  <div>
+                    <p class="chu">Ngày Sinh:29/10/2003</p>
+                    <p class="chu">Điện thoại: 0354259128</p>
+                    <p class="chu flex justify-start">
+                      Xã hội :
+                      <a
+                        class="ml-5"
+                        href="https://www.facebook.com/profile.php?id=100035769396716&mibextid=LQQJ4d"
+                        ><i
+                          class="face fa-brands fa-facebook mx-auto flex items-center text-2xl"
+                        ></i
+                      ></a>
+                      <a
+                        class="ml-5"
+                        href="https://www.instagram.com/quang.trieu03/"
+                        ><i
+                          class="faced fa-brands fa-instagram mx-auto flex items-center text-2xl"
+                        ></i
+                      ></a>
+                    </p>
+                  </div>
+                </div>
+                <div class="anh">
+                  <img
+                    class="rounded-xl"
+                    src="./img/z5907798370086_64b59c5135b11b04f7bcab37279edcd0.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- <div class="flex justify-around">
+                <button class="mail">Mail</button>
+                <button class="mail">Phone</button>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="boc1 flex-col flex-1">
+            <div><h4>Tổng Quan</h4></div>
+            <div class="boc justify-center">
+              <div class="phantu text-white text-left px-7">
+                <p class="chu">Biết sử dụng html,css js,taiWind Css</p>
+                <p class="chu">
+                  Khả năng học hỏi và ứng dụng công nghệ mới nhanh
+                </p>
+                <p class="chu">Sở thích :Thích bi-a,chơi điện tử ,...</p>
+                <p class="chu">Nơi làm việc hiện tại : Hà Nội</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="duancanhan" id="Information">
+      <h3 class="mb-12 text-4xl">Dự án cá nhân</h3>
+      <div class="container mx-auto overflow-hidden">
+        <div
+          id="container-7__slider"
+          class="flex"
+          style="width: 200%; transition: 0.5s ease-in-out"
+        >
+          <div style="width: 50%" class="container-7 flex gap-36 pt-5 pl-5">
+            <div class="flex-1 duan1 pb-5">
+              <h4>Dự Án</h4>
+              <div class="slidechu text-white text-left">
+                <div class="flex">
+                  <p class="chuduoi text-2xl flex items-center text-white">
+                    Tên : Giao diện web bán quần áo
+                  </p>
+                </div>
+                <div class="flex">
+                  <p class="chuduoi flex items-center text-2xl text-white">
+                    Mô tả:Người dùng có thể thao tác được với các sản phẩm quần
+                    ,áo
+                  </p>
+                </div>
+                <p class="chuduoi flex items-center text-2xl text-white">
+                  Công cụ : Html,css,bootrap
+                </p>
+                <a
+                  class="flex text-2xl"
+                  href="https://github.com/your-username/your-repository"
+                  target="_blank"
+                  ><p class="text-white">Link git:</p>
+                  Visit my GitHub repository</a
+                >
+              </div>
+            </div>
+            <div class="flex-1 pr-5">
+              <div>
+                <img class="anhduan w-full" src="./img/quâno1.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div style="width: 50%" class="container-7 flex gap-36 pt-5 pl-5">
+            <div class="flex-1 duan1 duan2">
+              <h4>Dự Án</h4>
+              <div class="slidechu text-white text-left">
+                <div class="flex">
+                  <p class="chuduoi text-2xl flex items-center text-white">
+                    Tên : Giao diện web bán đồng hồ
+                  </p>
+                </div>
+                <div class="flex">
+                  <p class="chuduoi flex items-center text-2xl text-white">
+                    Mô tả :Người dùng có thể thao tác được với các sản phẩm muốn
+                    mua
+                  </p>
+                </div>
+                <p class="chuduoi flex items-center text-2xl text-white">
+                  Công cụ : Html,css,bootrap
+                </p>
+                <a
+                  class="flex text-2xl"
+                  href="https://github.com/your-username/your-repository"
+                  target="_blank"
+                  ><p class="text-white">Link git:</p>
+                  Visit my GitHub repository</a
+                >
+              </div>
+            </div>
+            <div class="flex-1 pr-5">
+              <div>
+                <img class="anhduan w-full" src="./img/đồngho.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btns iconcarousel-item iconcarousel-item1 text-white">
+          <a
+            class="btn-left btn"
+            id="duan-slider-prev"
+            style="color: rgb(239, 233, 233)"
+            >&#8592;</a
+          >
+          <a
+            class="btn-right btn"
+            id="duan-slider-next"
+            style="color: rgb(236, 230, 230)"
+            >&#8594;</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div class="CHALLENGES flex justify-center pb-10 pt-20" id="Challenges">
+      <div class="flex CHALLENGES-1">
+        <h3
+          class="flex items-center text-4xl pr-3 logo3 font-bold CHALLENGES-1-chu"
+        >
+          Thách thức
+        </h3>
+        <img class="logo4" src="./img/Logo I&E đỏ (png).png" alt="" />
+      </div>
+    </div>
+
+    <div class="cay1">
+      <div class="container mx-auto">
+        <div class="cay flex gap-12">
+          <div class="anh9 flex flex-1 justify-end">
+            <div class="duan text-center py-9 flex flex-col items-center">
+              <h5 class="text-4xl pb-2.5">Challenge 0</h5>
+              <p class="px-3 text-2xl">Website Khoa Tieng ITALI HANU</p>
+              <a
+                class="mt-2.5"
+                href="https://trieupq.thuctap.inevn.com/TT00/"
+                target="_blank"
+                >Link to Website</a
+              >
+              <button class="mail mt-6 z-0" onclick="xemthem('mo',3)">
+                <span>Chi Tiết </span>
+              </button>
+            </div>
+          </div>
+          <div class="flex-1 justify-center">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto">
+        <div class="cay flex gap-12">
+          <div class="flex flex-1 justify-center"></div>
+          <div class="anh10 flex flex-1">
+            <div
+              class="duan duan-1 text-center py-9 flex flex-col items-center"
+            >
+              <h5 class="text-4xl pb-2.5">Challenge 1</h5>
+              <p class="px-3 text-2xl">Website giới thiệu về bản thân</p>
+              <a
+                class="mt-2.5"
+                href="https://trieupq.thuctap.inevn.com/TT01/"
+                target="_blank"
+                >Link to Website</a
+              >
+              <button class="mail mt-6" onclick="xemthem('mo',2)">
+                Chi Tiết
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hangdoc">
+        <div class="hinhtron"></div>
+      </div>
+      <div class="noidung3 flex-col pl-10 pb-5 pr-5 pt-2">
+        <div class="flex justify-end">
+          <button class="button close" onclick="xemthem('dong',3)">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <h1 class="text-center text-xl font-bold">Challenge 0</h1>
+        <div class="noidung1">
+          <p class="font-bold leading-9">Tên: Website personal information</p>
+          <p class="font-bold leading-9">Công nghệ : HTML, CSS, JavaScript</p>
+          <p class="font-bold leading-9">Yêu cầu:</p>
+          <ul class="leading-3">
+            <li>
+              <p class="mb-2 leading-4">
+                Code đúng giao diện về bố cục, màu sắc, hình ảnh
+              </p>
+            </li>
+            <li>
+              <p class="mb-2 leading-4">
+                Wibsite có sử dụng nhiều hiệu ứng sáng tạo
+              </p>
+            </li>
+            <li>
+              <p class="mb-2 leading-4">
+                Code gọn gàng, đúng coding convention
+              </p>
+            </li>
+            <li>
+              <p class="mb-2 leading-4">
+                Responsive tốt trên tất cả các kích thước thiết bị / trình duyệt
+                hiển thị
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="noidung2 flex-col pl-10 pb-5 pr-5 pt-2">
+        <div class="flex justify-end">
+          <button class="button close" onclick="xemthem('dong',2)">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <h1 class="text-center text-xl font-bold">Challenge 1</h1>
+        <div class="noidung1">
+          <p class="font-bold leading-9">Tên: Website personal information</p>
+          <p class="font-bold leading-9">Công nghệ: HTML, CSS, JavaScript</p>
+          <p class="font-bold leading-9">Yêu Cầu:</p>
+          <ul class="leading-3">
+            <li>
+              <p class="mb-2 leading-4">
+                Code đúng giao diện về bố cục, màu sắc, hình ảnh
+              </p>
+            </li>
+            <li>
+              <p class="mb-2 leading-4">
+                Wibsite có sử dụng nhiều hiệu ứng sáng tạo
+              </p>
+            </li>
+            <li>
+              <p class="mb-2 leading-4">
+                Code gọn gàng, đúng coding convention
+              </p>
+            </li>
+            <li>
+              <p class="mb-2 leading-4">
+                Responsive tốt trên tất cả các kích thước thiết bị / trình duyệt
+                hiển thị
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section class="skills" id="skills">
+      <div class="container mx-auto">
+        <div class="">
+          <div class="main-text mb-5">
+            <h3 class="text-4xl font-black">Kĩ Năng</h3>
+          </div>
+          <div class="noidung9 flex gap-12">
+            <div class="flex-1">
+              <h3 class="text-3xl text-white">Kĩ thuật</h3>
+              <div class="flex gap-5 noidung9-1 mt-5 py-12 px-5">
+                <div class="text-black bentrai1 text-xl gap-12">
+                  <p class="mt-7">30%</p>
+                  <p class="mt-12">20%</p>
+                  <p class="mt-14">20%</p>
+                </div>
+                <div class="text-black flex-1">
+                  <p class="text-left">HTML</p>
+
+                  <div class="bar mt-3">
+                    <span class="html"></span>
+                  </div>
+                  <div class="text-black flex-1 mt-8">
+                    <p class="text-left">JavaScript</p>
+                    <div class="bar">
+                      <span class="JavaScript"></span>
+                    </div>
+                  </div>
+                  <div class="text-black flex-1 mt-9">
+                    <p class="text-left text-xl">css</p>
+                    <div class="bar">
+                      <span class="css"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-3xl text-white">Kĩ năng nghề nghiệp</h3>
+              <div class="mt-5 flex justify-center">
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Expectation">
+      <div
+        class="kivong pt-24 pb-5 text-4xl font-black text-center"
+        id="Expectation"
+      >
+        <h3>Kỳ Vọng</h3>
+      </div>
+
+      <div class="skill pt-8 pb-8">
+        <div class="container mx-auto">
+          <div class="flex gap-12 skill1">
+            <div class="skill-1 flex flex-1 flex-col items-center flex-end">
+              <h5 class="text-4xl pb-2.5 pt-8">Khả năng tư duy</h5>
+              <p class="text-xl"></p>
+              <div class="tuduy flex gap-7 mr-5 w-full lg:w-2/4 justify-center">
+                <div class="flex items-center justify-center"></div>
+                <ul
+                  class="text-xl mb-5 mt-5 xl:text-xl text-sm"
+                  id="khaNangTuDuy"
+                ></ul>
+              </div>
+            </div>
+            <div class="skill-1 flex flex-1 justify-center">
+              <div class="skill-1 flex flex-1 flex-col items-center flex-end">
+                <h5 class="text-4xl pb-2.5 pt-8">Kỹ năng làm việc</h5>
+                <p class="text-xl"></p>
+
+                <div
+                  class="flex mr-5 gap-12 w-7/12 w-full lg:w-2/4 justify-center"
+                >
+                  <div></div>
+                  <ul class="text-xl mb-5 mt-5 xl:text-xl text-sm">
+                    <li class="flex">
+                      <img
+                        class="anhtuduy mr-5 mb-3"
+                        src="./img/phantichvande.jpg"
+                        alt=""
+                      />
+                      <p class="mb-2">Phân tích vấn đề</p>
+                    </li>
+                    <li class="flex">
+                      <img
+                        class="anhtuduy mr-5 mb-3"
+                        src="./img/lapkehoach.jpg"
+                        alt=""
+                      />
+                      <p class="mb-2">Lập kế hoạch</p>
+                    </li>
+                    <li class="flex">
+                      <img
+                        class="anhtuduy mr-5 mb-3"
+                        src="./img/quanlythoigian.png"
+                        alt=""
+                      />
+                      <p class="mb-2">Quản lý thời gian</p>
+                    </li>
+                    <li class="flex">
+                      <img
+                        class="anhtuduy mr-5 mb-3"
+                        src="./img/lamviectheonhom.jpg"
+                        alt=""
+                      />
+                      <p class="mb-2">Làm việc theo nhóm</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-12 mt-10 skill2">
+            <div class="skill-1 flex flex-1 flex-col items-center flex-end">
+              <h5 class="text-4xl pb-2.5 pt-8">Kỹ năng chuyên môn</h5>
+              <p class="text-xl"></p>
+              <div class="flex mr-0 sm:mr-5 gap-12 kinangchuyenmon">
+                <ul class="flex flex-col xl:text-xl text-sm mb-5 mt-5">
+                  <li class="flex">
+                    <img
+                      class="anhtuduy mr-5 mb-3 text-xl"
+                      src="./img/html.jpg"
+                      alt=""
+                    />
+                    HTML,CSS
+                  </li>
+                  <li class="flex">
+                    <img class="anhtuduy mr-5 mb-3" src="./img/js.png" alt="" />
+                    JavaScript
+                  </li>
+                  <li class="flex">
+                    <img
+                      class="anhtuduy mr-5 mb-3"
+                      src="./img/inevo.png"
+                      alt=""
+                    />
+                    INEVO
+                  </li>
+                  <li class="flex">
+                    <img
+                      class="anhtuduy mr-5 mb-3"
+                      src="./img/skillllll.jpg"
+                      alt=""
+                    />
+                    Improve and Develop Skills
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="skill-1 flex flex-1 justify-center">
+              <div class="skill-1 flex flex-1 flex-col items-center flex-end">
+                <h5 class="text-4xl pb-2.5 pt-8">Kỹ năng mềm</h5>
+                <p class="text-xl"></p>
+                <div class="flex mr-5 gap-12">
+                  <ul class="flex flex-col text-xl mb-5 mt-5 pl-12 lg:pl-5">
+                    <li class="flex">
+                      <img
+                        class="anhtuduy mr-5 mb-3"
+                        src="./img/kinangthuyetrinh.jpg"
+                        alt=""
+                      />
+                      Kỹ năng thuyết trình
+                    </li>
+                    <li class="flex">
+                      <img
+                        class="anhtuduy mr-5 mb-3"
+                        src="./img/giaotiep.png"
+                        alt=""
+                      />
+                      Kỹ năng giao tiếp
+                    </li>
+                    <li class="flex">
+                      <img
+                        class="anhtuduy mr-5 mb-3"
+                        src="./img/nghe.jpg"
+                        alt=""
+                      />
+                      Kỹ năng nghe
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="fotter flex justify-center pt-9 pb-9">
+      <div class="container">
+        <div class="lienhe text-4xl">
+          <p>Liên Hệ</p>
+        </div>
+        <div class="fotter-duoi flex flex justify-around pt-9 pb-5">
+          <a href="tel:0354259128"><p>Số ĐIện Thoại : 0354259128</p></a>
+          <a href="mailto:Phamtrieu292k3@gmail.com" target="_blank"
+            >Mail: Phamtrieu292k3@gmail.com</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="quaylai">
+      <button class="btnquay">
+        <i class="fa-solid fa-arrow-up text-red-600"></i>
+      </button>
+    </div>
+
+    <script type="module" src="./render.js"></script>
+    <script src="./thanhmenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./duan.js"></script>
+    <script src="./slidedau.js"></script>
+  </body>
+</html>
