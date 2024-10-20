@@ -16,8 +16,7 @@
     text-align: left;
   } 
   .menu-1{
-    display: flex;
-    justify-content: space-around;
+    
   }
   .bentrong{
     flex-direction: column;
@@ -133,10 +132,7 @@ ul{
   .kinangchuyenmon {
     margin-right: 0;
   }
-  .menu-1{
-    display: flex;
-    justify-content: space-around;
-  }
+  
   .menu{
     white-space: nowrap;
     
