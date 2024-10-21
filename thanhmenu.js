@@ -1,24 +1,18 @@
 // thanh mennu
 const toggleButton = document.getElementById("toggleButton");
-const menu = document.querySelector(".menu");
+const menu = document.querySelector("#header__ul");
 
 toggleButton.addEventListener("click", () => {
-  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-  document.getElementById("menuButton").addEventListener("click");
+  // menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  // document.getElementById("menuButton").addEventListener("click");
+  menu.classList.toggle("show");
 });
-
-
-
-
 
 /// quay lai dau trang
 const quaylai = document.querySelector(".btnquay");
 quaylai.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
-
-
-
 
 //thay dooir no dung
 const bocs = document.querySelector(".boc");
@@ -36,15 +30,13 @@ function xemthem(trangThai, a) {
   }
 }
 
-
-
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",
   duration: 1000,
 };
 
-ScrollReveal().reveal("body > .container > div", {
+ScrollReveal().reveal("section:nth-child(n+2) > div", {
   ...scrollRevealOption,
   interval: 50,
 });

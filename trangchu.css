@@ -19,6 +19,10 @@ header {
   border-bottom: 1px solid white;
 }
 
+#header__ul {
+  display: flex;
+}
+
 /* Thiết lập mặc định cho các mục trong menu */
 .menu li a {
    /* Màu chữ mặc định */
@@ -617,6 +621,4 @@ h1,.CHALLENGES-1-chu{
 .face:hover ,.faced:hover ,.close:hover {
   transform: scale(1.1);
 }
-.duan-1{
-  padding-left: 27px;
-}
+

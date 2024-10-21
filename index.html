@@ -38,31 +38,28 @@
                 ><img class="logo-1" src="./img/Logo I&E đỏ (png).png" alt=""
               /></a>
             </div>
-            <ul class="menu flex-col md:flex-row md:flex">
-              <div class="menu-1 flex">
-                <li>
-                  <a href="#home"><p>Trang Chủ</p> </a>
-                </li>
-                <li>
-                  <a href="#Information"><p>Thông Tin</p> </a>
-                </li>
-                <li>
-                  <a href="#Challenges"><p>Thử Thách</p> </a>
-                </li>
-                <li>
-                  <a href="#skills"><p>Kĩ Năng</p> </a>
-                </li>
-                <li>
-                  <a href="#Expectation"><p>Kỳ Vọng</p></a>
-                </li>
-              </div>
+            <ul
+              class="menu flex-col md:flex-row md:flex hidden"
+              id="header__ul"
+            >
+              <li>
+                <a href="#home">Trang Chủ </a>
+              </li>
+              <li>
+                <a href="#Information">Thông Tin </a>
+              </li>
+              <li>
+                <a href="#Challenges">Thử Thách</a>
+              </li>
+              <li>
+                <a href="#skills">Kĩ Năng </a>
+              </li>
+              <li>
+                <a href="#Expectation">Kỳ Vọng</a>
+              </li>
             </ul>
 
-            <button
-              id="toggleButton"
-              class="icon w-4 h-4 md:hidden"
-              onclick="showMenu()"
-            >
+            <button id="toggleButton" class="icon w-4 h-4 md:hidden">
               <i class="fa-solid fa-bars"></i>
             </button>
           </nav>
@@ -139,7 +136,7 @@
         <div class="container-2 flex gap-36">
           <div class="flex-1 aboutMe-item rounded-2xl pt-9 pl-9 pr-7 pb-5">
             <div class="flex justify-around gap-12 flex-col flex-1">
-              <div class="flex gap-10">
+              <div class="ten-1 flex md:gap-10">
                 <div class="ten text-white text-left">
                   <div>
                     <h3 class="mb-3">Phạm Quang Triệu</h3>
@@ -227,16 +224,16 @@
                 </p>
                 <a
                   class="flex text-2xl"
-                  href="https://github.com/your-username/your-repository"
+                  href="https://github.com/quangtrieu2003/Mai"
                   target="_blank"
-                  ><p class="text-white">Link git:</p>
+                  ><p class="text-white ">Link:</p>
                   Visit my GitHub repository</a
                 >
               </div>
             </div>
             <div class="flex-1 pr-5">
-              <div>
-                <img class="anhduan w-full" src="./img/quâno1.jpg" alt="" />
+              <div class="h-full">
+                <img class="anhduan w-full h-full object-cover" src="./img/quâno1.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -260,7 +257,7 @@
                 </p>
                 <a
                   class="flex text-2xl"
-                  href="https://github.com/your-username/your-repository"
+                  href="https://github.com/quangtrieu2003/Mai"
                   target="_blank"
                   ><p class="text-white">Link git:</p>
                   Visit my GitHub repository</a
@@ -268,8 +265,8 @@
               </div>
             </div>
             <div class="flex-1 pr-5">
-              <div>
-                <img class="anhduan w-full" src="./img/đồngho.jpg" alt="" />
+              <div class="h-full">
+                <img class="anhduan w-full h-full object-cover" src="./img/đồngho.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -304,18 +301,20 @@
 
     <div class="cay1">
       <div class="container mx-auto">
-        <div class="cay flex gap-12">
+        <div class="cay flex gap-10">
           <div class="anh9 flex flex-1 justify-end">
-            <div class="duan text-center py-9 flex flex-col items-center">
-              <h5 class="text-4xl pb-2.5">Challenge 0</h5>
-              <p class="px-3 text-2xl">Website Khoa Tieng ITALI HANU</p>
+            <div
+              class="duan text-center pt-8 pb-8 flex flex-col items-center w-full"
+            >
+              <h5 class="text-2xl pb-2.5">Thử thách 0</h5>
+              <p class="px-3 text-xl">Website Khoa Tieng ITALI HANU</p>
               <a
                 class="mt-2.5"
                 href="https://trieupq.thuctap.inevn.com/TT00/"
                 target="_blank"
                 >Link to Website</a
               >
-              <button class="mail mt-6 z-0" onclick="xemthem('mo',3)">
+              <button class="mail mt-4 z-0" onclick="xemthem('mo',3)">
                 <span>Chi Tiết </span>
               </button>
             </div>
@@ -330,17 +329,17 @@
           <div class="flex flex-1 justify-center"></div>
           <div class="anh10 flex flex-1">
             <div
-              class="duan duan-1 text-center py-9 flex flex-col items-center"
+              class="duan duan-1 text-center pt-8 pb-8 flex flex-col items-center w-full"
             >
-              <h5 class="text-4xl pb-2.5">Challenge 1</h5>
-              <p class="px-3 text-2xl">Website giới thiệu về bản thân</p>
+              <h5 class="text-2xl pb-2.5">Thử thách 1</h5>
+              <p class="px-3 text-xl">Website giới thiệu về bản thân</p>
               <a
                 class="mt-2.5"
                 href="https://trieupq.thuctap.inevn.com/TT01/"
                 target="_blank"
                 >Link to Website</a
               >
-              <button class="mail mt-6" onclick="xemthem('mo',2)">
+              <button class="mail mt-4" onclick="xemthem('mo',2)">
                 Chi Tiết
               </button>
             </div>
@@ -358,7 +357,7 @@
         </div>
         <h1 class="text-center text-xl font-bold">Challenge 0</h1>
         <div class="noidung1">
-          <p class="font-bold leading-9">Tên: Website personal information</p>
+          <p class="font-bold leading-9">Tên:Thiết kế website ITALI HANU</p>
           <p class="font-bold leading-9">Công nghệ : HTML, CSS, JavaScript</p>
           <p class="font-bold leading-9">Yêu cầu:</p>
           <ul class="leading-3">
@@ -394,7 +393,7 @@
         </div>
         <h1 class="text-center text-xl font-bold">Challenge 1</h1>
         <div class="noidung1">
-          <p class="font-bold leading-9">Tên: Website personal information</p>
+          <p class="font-bold leading-9">Tên: Thiết kế website giới thiệu về bản thân </p>
           <p class="font-bold leading-9">Công nghệ: HTML, CSS, JavaScript</p>
           <p class="font-bold leading-9">Yêu Cầu:</p>
           <ul class="leading-3">
@@ -432,7 +431,7 @@
           <div class="noidung9 flex gap-12">
             <div class="flex-1">
               <h3 class="text-3xl text-white">Kĩ thuật</h3>
-              <div class="flex gap-5 noidung9-1 mt-5 py-12 px-5">
+              <div class="flex gap-5 noidung9-1 mt-5 py-14 px-5">
                 <div class="text-black bentrai1 text-xl gap-12">
                   <p class="mt-7">30%</p>
                   <p class="mt-12">20%</p>
@@ -620,7 +619,11 @@
           <p>Liên Hệ</p>
         </div>
         <div class="fotter-duoi flex flex justify-around pt-9 pb-5">
-          <a href="tel:0354259128"><p>Số ĐIện Thoại : 0354259128</p></a>
+          <div>
+            <a href="tel:0354259128"><p>Số ĐIện Thoại : 0354259128</p></a>
+            
+          </div>
+
           <a href="mailto:Phamtrieu292k3@gmail.com" target="_blank"
             >Mail: Phamtrieu292k3@gmail.com</a
           >
@@ -634,10 +637,9 @@
     </div>
 
     <script type="module" src="./render.js"></script>
-    <script src="./thanhmenu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./thanhmenu.js"></script>
     <script src="./duan.js"></script>
-    <script src="./slidedau.js"></script>
   </body>
 </html>

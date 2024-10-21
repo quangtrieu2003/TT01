@@ -6,7 +6,6 @@
     flex-direction: column;
     transition: right 0.3s ease;
     position: absolute;
-    display: none;
     background: rgb(8,28,41);
     width: fit-content;
     top: 62px;
@@ -15,9 +14,18 @@
     width: 100%;
     text-align: left;
   } 
-  .menu-1{
-    
+  .noidung3,.noidung2{
+    width: 80%;
   }
+
+  #header__ul {
+    display: none;
+  }
+  
+  #header__ul.show{
+    display: flex;
+  }
+
   .bentrong{
     flex-direction: column;
   }
@@ -32,6 +40,7 @@
   }
  
   .hangdoc{
+
     
   }
   ul.menu a {
@@ -42,10 +51,9 @@
   .container3 {
     flex-direction: column;
   }
-  .hangdoc {
-    display: none;
+  .ten-1{
+    gap: 0;
   }
-  .cay,
   .skill1,
   .skill2,
   .CHALLENGES-1 {
@@ -54,20 +62,19 @@
   .skill {
     padding: 20px;
   }
-  .anh10::before {
-    display: none;
-    
-  }
-  .anh9::before {
-    display: none;
-  }
+  
   .CHALLENGES-1-chu {
     display: flex;
     justify-content: center;
   }
-  .anh10,
-  .anh9 {
-    justify-content: center;
+  .anh9,.anh10 {
+    width: 44%;
+  }
+  .anh10{
+    justify-content: flex-end;
+  }
+  .anh9{
+    justify-content: flex-start;
   }
   .noidung1 ul li {
     line-height: 24px;
@@ -83,36 +90,39 @@
     margin-bottom: 20px;
   }
   .anh9 {
-    justify-content: center !important;
+    justify-content:center;
   }
   .noidung9 {
     flex-direction: column;
   }
   
-ul.menu a {
-  position: relative;
-  padding: 9px 2px;
-  border-radius: 9px;
-}
+  ul.menu a {
+    position: relative;
+    padding: 9px 2px;
+    border-radius: 9px;
+  }
 
-ul.menu a::after {
-  content: "";
-  height: 5px;
-  width: 0px;
-  border-radius: 2px;
-  background: rgb(182, 90, 59);
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  transition: all 0.5s ease-in-out;
-}
-ul.menu a:hover::after {
-  width: 50%;
-  transform: translateX(100%);
-}
-ul{
-  gap: 0;
-}
+  ul.menu a::after {
+    content: "";
+    height: 5px;
+    width: 0px;
+    border-radius: 2px;
+    background: rgb(182, 90, 59);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  ul.menu a:hover::after {
+    width: 50%;
+    transform: translateX(100%);
+  }
+  ul{
+    gap: 0;
+  }
+  .cay{
+    padding: 0 12px;
+  }
   
 }
 @media screen and (max-width: 1025px) {
@@ -152,6 +162,6 @@ ul{
 }
 @media screen and (max-width: 431px){
 .hangdoc{
-  display: none;
+
 }
 }
